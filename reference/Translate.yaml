@@ -68,12 +68,12 @@ paths:
 components:
   schemas: {}
   securitySchemes:
-    apiKey:
-      name: API Key
+    API Key:
+      name: apiKey
       type: apiKey
       in: header
 tags:
   - name: translate
     description: translate
 security:
-  - apiKey: []
+  - API Key: []
