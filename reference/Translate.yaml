@@ -28,12 +28,28 @@ paths:
             application/json:
               schema:
                 $ref: ../models/successReponse.yaml
+              examples:
+                example-1:
+                  value:
+                    TranslatedText: こんにちは
+                    SourceLanguageCode: en
+                    TargetLanguageCode: ja
         '400':
           description: Bad Request
           content:
             application/json:
               schema:
                 $ref: ../models/errorResponse.yaml
+              examples:
+                example-1:
+                  value:
+                    message: 'Unsupported language pair: en to zz. Target language ''zz'' is not supported'
+                    code: UnsupportedLanguagePairException
+                    time: '2022-06-30T19:06:40.272Z'
+                    requestId: 81926238-2f36-46cc-afc5-953ea1fd1f13
+                    statusCode: 400
+                    retryable: false
+                    retryDelay: 99.47665462298107
       operationId: get-translatetext
       description: 'Translate text. Supported languages can be found here: https://docs.aws.amazon.com/translate/latest/dg/what-is-languages.html'
       parameters:

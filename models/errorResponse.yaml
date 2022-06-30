@@ -1,7 +1,26 @@
-title: errorResponse
-x-stoplight:
-  id: ondnqlxeu9tj4
-type: string
-x-tags:
-  - error response
-description: Error   response
+type: object
+x-examples:
+  example-1:
+    message: 'Unsupported language pair: en to zz. Target language ''zz'' is not supported'
+    code: UnsupportedLanguagePairException
+    time: '2022-06-30T19:06:40.272Z'
+    requestId: 81926238-2f36-46cc-afc5-953ea1fd1f13
+    statusCode: 400
+    retryable: false
+    retryDelay: 99.47665462298107
+properties:
+  message:
+    type: string
+  code:
+    type: string
+  time:
+    type: string
+    format: date-time
+  requestId:
+    type: string
+  statusCode:
+    type: integer
+  retryable:
+    type: boolean
+  retryDelay:
+    type: number
