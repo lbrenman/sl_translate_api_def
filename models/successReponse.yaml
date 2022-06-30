@@ -1,0 +1,13 @@
+type: object
+properties:
+  SourceLanguageCode:
+    type: string
+  TargetLanguageCode:
+    type: string
+  TranslatedText:
+    type: string
+x-examples:
+  example-1:
+    SourceLanguageCode: string
+    TargetLanguageCode: string
+    TranslatedText: string

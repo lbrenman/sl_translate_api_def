@@ -1,0 +1,7 @@
+title: errorResponse
+x-stoplight:
+  id: ondnqlxeu9tj4
+type: string
+x-tags:
+  - error response
+description: Error   response
