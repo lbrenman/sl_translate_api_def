@@ -40,12 +40,6 @@ paths:
         - schema:
             type: string
           in: query
-          name: SourceLanguageCode
-          description: Language code for input text
-          required: true
-        - schema:
-            type: string
-          in: query
           name: TargetLanguageCode
           description: Language code for desired translation
           required: true
