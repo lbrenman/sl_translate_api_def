@@ -35,19 +35,19 @@ paths:
               schema:
                 $ref: ../models/errorResponse.yaml
       operationId: get-translatetext
-      description: Translate text
+      description: 'Translate text. Supported languages can be found here: https://docs.aws.amazon.com/translate/latest/dg/what-is-languages.html'
       parameters:
         - schema:
             type: string
           in: query
           name: SourceLanguageCode
-          description: 'Language code for input text (https://docs.aws.amazon.com/translate/latest/dg/what-is-languages.html)'
+          description: Language code for input text
           required: true
         - schema:
             type: string
           in: query
           name: TargetLanguageCode
-          description: 'Language code for desired translation (https://docs.aws.amazon.com/translate/latest/dg/what-is-languages.html)'
+          description: Language code for desired translation
           required: true
         - schema:
             type: string
